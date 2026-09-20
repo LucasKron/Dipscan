@@ -1,9 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
 import './precos.css'
+import Nav from '../../../components/Nav/Nav'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-
-  </StrictMode>,
-)
+export default function Precos(){
+  return(
+    <div className='pg-precos'>
+      <Nav/>
+    </div>
+  )
+}

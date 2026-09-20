@@ -1,9 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
 import './github_action.css'
+import Nav from '../../../components/Nav/Nav'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-
-  </StrictMode>,
-)
+export default function GithubAction(){
+  return(
+    <div className='pg-github-action'>
+      <Nav/>
+    </div>
+  )
+}
