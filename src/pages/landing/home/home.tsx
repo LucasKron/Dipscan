@@ -1,10 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
 import './home.css'
 import Nav from '../../../components/Nav/Nav'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <Nav/>
-  </StrictMode>,
-)
+export default function Home(){
+  return(
+    <div className='pg-home'>
+      <Nav/>
+    </div>
+  )
+}
