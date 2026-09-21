@@ -1,0 +1,31 @@
+#docs{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+#aba-lateral{
+    padding-top: 72px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aba-sub{
+    display: flex;
+    flex-direction: column;
+}
+
+.aba-subtitulo{
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #A8A59C;
+}
+
+.btn{
+    padding: 8px 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
