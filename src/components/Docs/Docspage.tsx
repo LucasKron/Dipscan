@@ -99,7 +99,7 @@ export default function Docspage(){
                 <div>
                     <span>depscan · código aberto</span>
                 </div>
-                <div>
+                <div className='footer-links'>
                     <Link to='/'>início</Link>
                     <Link to='/precos'>preços</Link>
                 </div>
