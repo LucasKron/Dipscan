@@ -1,0 +1,88 @@
+#menu{
+    flex-shrink: 0;
+}
+#menu aside{
+    width: 244px;
+    flex-shrink: 0;
+    background: #f6f4ef;
+    border-right: #e4e0d6;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    transition: width .22s ease;
+    overflow: hidden;
+}
+#side-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 14px 18px;
+}
+#menu-logo{
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 4px;
+}
+.menu-links{
+    padding: 0 12px;
+}
+.menu-titles{
+    font-size: 11px;
+    color: #A8A59C;
+    letter-spacing: 1px;
+    padding: 0 10px 8px;
+}
+.menu-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.menu-links ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #5c6066;
+    cursor: pointer;
+}
+.divider{
+    margin: 14px 18px;
+    border-top: 1px solid #c6c5c0;
+}
+.menu-links p{
+    display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+#toggle-button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #5c6066;
+    flex-shrink: 0;
+    font-size: 15px;
+    font-family: inherit;
+}
+#toggle-button:hover{
+    background-color: #ebe9e1d2;
+}
+.menu-links ul li:hover{
+    background-color: #ebe9e1d2;
+}
+.menu-icon{
+    width: 15px;
+}

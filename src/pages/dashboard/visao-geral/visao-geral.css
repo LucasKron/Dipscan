@@ -1,0 +1,29 @@
+.pg-visao-geral{
+    display: flex;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #e2e1d8;
+}
+#visao-geral{
+    background-color: #e2e0d8;
+}
+#visao-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 28px;
+    border-bottom: 1px solid #edebe4;
+    background: #fff;
+    flex-wrap: wrap; 
+}
+#visao-top h1{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -.3px;
+    margin: 0;
+}
+.main{
+    flex: 1;
+    min-width: 0;
+}
