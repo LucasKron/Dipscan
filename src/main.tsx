@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 
-import Home from './pages/landing/home/home'
+import Home from './pages/Home/home'
 import Docs from './pages/landing/docs/docs'
 import Precos from './pages/landing/precos/precos'
 import Entrar from './pages/landing/entrar/entrar'
