@@ -74,8 +74,18 @@
     margin-bottom: 14px;
 }
 
+.painel .indicador{
+    padding: 18px;
+}
+.painel .indicador-rotulo{
+    font-size: 12px;
+    letter-spacing: .3px;
+    color: #9a9ca1;
+}
+
 .painel .colunas-4,
 .painel .colunas-3,
+.painel .colunas-2,
 .painel .colunas-2-1{
     display: grid;
     gap: 14px;
@@ -86,8 +96,16 @@
 .painel .colunas-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.painel .colunas-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .painel .colunas-2-1{
     grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+}
+.painel .coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 .painel .espaco{
     margin-top: 14px;
@@ -124,12 +142,195 @@
     color: #0b7a55;
 }
 
+.painel .abas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12px;
+}
+.painel .aba{
+    padding: 6px 12px;
+    border: none;
+    border-radius: 7px;
+    background: transparent;
+    font-family: inherit;
+    font-size: 12px;
+    color: #5c6066;
+    cursor: pointer;
+}
+.painel .aba-ativa{
+    background: #f4f2ec;
+    color: #14161a;
+}
+
+.painel .tabela{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+.painel .tabela th{
+    padding-bottom: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #9a9ca1;
+}
+.painel .tabela td{
+    padding: 13px 0;
+    border-top: 1px solid #f5f3ed;
+}
+
+.painel .card-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+.painel .paginacao{
+    display: flex;
+    gap: 6px;
+}
+.painel .botao-mini{
+    padding: 6px 12px;
+    font-size: 12px;
+}
+.painel .botao-perigo{
+    border-color: #e8b4b4;
+    color: #8f2e2e;
+}
+
+.painel .opcao{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+}
+.painel .opcao + .opcao{
+    border-top: 1px solid #f5f3ed;
+}
+.painel .opcao div{
+    flex: 1;
+}
+.painel .opcao p{
+    font-size: 14px;
+}
+.painel .opcao span{
+    display: block;
+    margin-top: 3px;
+}
+.painel .interruptor{
+    position: relative;
+    width: 38px;
+    height: 22px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 999px;
+    background: #d5d2ca;
+    cursor: pointer;
+}
+.painel .interruptor::after{
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+}
+.painel .interruptor-ligado{
+    background: #0b7a55;
+}
+.painel .interruptor-ligado::after{
+    left: 19px;
+}
+
+.painel .campo{
+    display: block;
+    margin-bottom: 16px;
+}
+.painel .campo span{
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    color: #5c6066;
+}
+.painel .campo input{
+    width: 100%;
+    padding: 11px 13px;
+    background: #fff;
+    border: 1px solid #e4e1d9;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #14161a;
+}
+
+.painel .passo{
+    display: flex;
+    gap: 16px;
+    padding: 18px 0;
+}
+.painel .passo + .passo{
+    border-top: 1px solid #f5f3ed;
+}
+.painel .passo-numero{
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f4f2ec;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: #5c6066;
+}
+.painel .passo p{
+    font-size: 14px;
+}
+
+.painel .dados{
+    list-style: none;
+    font-size: 13px;
+}
+.painel .dados li{
+    padding: 7px 0;
+    color: #9a9ca1;
+}
+
+.painel .rotulo{
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #5c6066;
+}
+.painel .separador{
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #f5f3ed;
+}
+
+.painel .botao:disabled{
+    background: #fff;
+    opacity: .45;
+    cursor: default;
+}
+.painel .botao:focus-visible,
+.painel .aba:focus-visible,
+.painel .interruptor:focus-visible{
+    outline: 2px solid #0b7a55;
+    outline-offset: 2px;
+}
+
 @media (max-width: 1000px){
     .painel{
         flex-direction: column;
     }
     .painel .colunas-4,
     .painel .colunas-3,
+    .painel .colunas-2,
     .painel .colunas-2-1{
         grid-template-columns: 1fr;
     }

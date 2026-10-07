@@ -1,52 +1,15 @@
-.pg-todos-projetos{
+.pg-todos-projetos .card-novo{
     display: flex;
-    align-items: flex-start;
-    min-height: 100vh;
-    background-color: #e2e1d8;
-}
-.pg-todos-projetos #todos-projetos{
-    background-color: #e2e0d8;
-}
-.pg-todos-projetos .main{
-    flex: 1;
-    min-width: 0;
-}
-#todos-projetos-top{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 16px;
-    padding: 18px 28px;
-    border-bottom: 1px solid #edebe4;
-    background: #fff;
-    flex-wrap: wrap;
-}
-#todos-projetos-top h1{
-    font-size: 17px;
-    font-weight: 500;
-    letter-spacing: -.3px;
-    margin: 0;
-}
-#todos-projetos-top p{
-    font-size: 12px;
-    color: #9a9ca1;
-}
-.pg-todos-projetos .conteudo{
-    padding: 22px 28px;
-}
-.pg-todos-projetos .grid-projetos{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 14px;
-}
-.pg-todos-projetos .card{
-    background: #fff;
-    border: 1px solid #edebe4;
-    border-radius: 14px;
-    padding: 20px;
+    justify-content: center;
+    width: 100%;
     min-height: 140px;
+    border-style: dashed;
+    font-family: inherit;
+    font-size: 14px;
+    color: #9a9ca1;
+    cursor: pointer;
 }
-.pg-todos-projetos .card h2{
-    font-size: 15px;
-    font-weight: 500;
+.pg-todos-projetos .card-novo:hover{
+    border-color: #dad6cb;
 }

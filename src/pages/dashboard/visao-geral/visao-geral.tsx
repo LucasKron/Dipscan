@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { Link } from "react-router-dom";
 
 import Menu from "../../../components/Menu/menu";
@@ -8,6 +10,8 @@ import "./visao-geral.css";
 const indicadores = ["ABERTAS", "CRÍTICAS", "COM CORREÇÃO", "CVSS MÁXIMO"];
 
 export default function VisaoGeral() {
+  const [busca, setBusca] = useState("");
+
   return (
     <div className="painel pg-visao-geral">
 
@@ -22,9 +26,15 @@ export default function VisaoGeral() {
           </div>
 
           <div className="painel-acoes">
-            <input className="painel-busca" type="text" placeholder="Buscar pacote ou CVE" />
+            <input
+              className="painel-busca"
+              type="text"
+              placeholder="Buscar pacote ou CVE"
+              value={busca}
+              onChange={(evento) => setBusca(evento.target.value)}
+            />
             <button className="botao" type="button">Exportar</button>
-            <button className="botao botao-escuro" type="button">Novo scan</button>
+            <Link className="botao botao-escuro" to="/escanear-gratis">Novo scan</Link>
           </div>
         </header>
 

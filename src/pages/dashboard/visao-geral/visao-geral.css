@@ -1,12 +1,3 @@
-.pg-visao-geral .indicador{
-    padding: 18px;
-}
-.pg-visao-geral .indicador-rotulo{
-    font-size: 12px;
-    letter-spacing: .3px;
-    color: #9a9ca1;
-}
-
 .pg-visao-geral .grafico-legenda{
     display: flex;
     flex-wrap: wrap;
