@@ -504,3 +504,206 @@
   }
 
 }
+
+.home-action {
+  max-width: 1080px;
+  margin: 20px auto 0;
+
+  padding: 70px 65px;
+
+  background: #14161a;
+  color: white;
+
+  border-radius: 24px;
+
+  display: grid;
+  grid-template-columns: 1fr 420px;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+.action-badge {
+  display: inline-block;
+
+  padding: 6px 13px;
+
+  border: 1px solid #30343a;
+  border-radius: 20px;
+
+  color: #8fe3c2;
+
+  font-family: monospace;
+  font-size: 12px;
+}
+
+
+.action-text h2 {
+  margin: 22px 0 18px;
+
+  font-size: 38px;
+  line-height: 1.1;
+
+  letter-spacing: -1px;
+}
+
+
+.action-text p {
+  max-width: 400px;
+
+  color: #9ca0a8;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  margin-bottom: 30px;
+}
+
+
+.action-button {
+  padding: 14px 25px;
+
+  background: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+
+.action-code {
+  background: #1d2128;
+
+  padding: 26px;
+
+  border-radius: 16px;
+
+  font-family: monospace;
+  font-size: 13px;
+
+  line-height: 1.9;
+
+  color: #e5e7ea;
+}
+
+
+.code-comment {
+  color: #656b74;
+}
+
+
+.code-green {
+  color: #8fe3c2;
+}
+
+
+.code-red {
+  color: #f09393;
+}
+
+
+.merge-box {
+  margin-top: 18px;
+
+  padding: 14px;
+
+  background: #14161a;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #9ca0a8;
+
+  font-size: 12px;
+}
+
+
+.merge-box b {
+  color: #f09393;
+}
+
+
+
+.final-cta {
+  text-align: center;
+
+  padding: 110px 20px;
+}
+
+
+.final-cta h2 {
+  font-size: 50px;
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+
+  margin-bottom: 22px;
+}
+
+
+.final-cta h2 em {
+  color: #0b7a55;
+
+  font-weight: 400;
+}
+
+
+.final-cta p {
+  font-size: 16px;
+
+  color: #6b6e74;
+
+  margin-bottom: 32px;
+}
+
+
+.final-cta button {
+  padding: 15px 27px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #14161a;
+  color: white;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+
+.final-cta button:hover {
+  background: #25282e;
+}
+
+
+
+@media (max-width: 900px) {
+
+  .home-action {
+    margin: 20px;
+
+    padding: 45px 30px;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .action-text h2 {
+    font-size: 32px;
+  }
+
+  .final-cta h2 {
+    font-size: 38px;
+  }
+
+}

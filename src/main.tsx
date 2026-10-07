@@ -8,7 +8,7 @@ import Docs from './pages/landing/docs/docs'
 import Precos from './pages/landing/precos/precos'
 import Entrar from './pages/landing/entrar/entrar'
 import EscanearGratis from './pages/landing/escanear-gratis/escanear-gratis'
-import GithubAction from './pages/landing/github-action/github-action'
+import GithubAction from './pages/landing/github_action/github_action'
 import VisaoGeral from './pages/dashboard/visao-geral/visao-geral'
 import Vulnerabilidades from './pages/dashboard/vulnerabilidades/vulnerabilidades'
 
