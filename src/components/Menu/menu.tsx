@@ -15,33 +15,33 @@ export default function Menu(){
                 <div id='first-section' className='menu-links'>
                     <p className='menu-titles'>ESTE PROJETO</p>
                     <ul>
-                        <li id='visao-geral'><LayoutGrid className='menu-icon' />Visão Geral</li>
+                        <li id='visao-geral'><LayoutGrid className='menu-icon' /><Link to='/dashboard'>Visão Geral</Link></li>
                         <li id='vulnerabilidades'><TriangleAlert className='menu-icon' /><Link to='/dashboard/vulnerabilidades'>Vulnerabilidades</Link></li>
-                        <li id='dependencias'><Layers className='menu-icon' />Dependências</li>
-                        <li id='historico'><IterationCw className='menu-icon' />Histórico de scans</li>
+                        <li id='dependencias'><Layers className='menu-icon' /><Link to='/dashboard/dependencias'>Dependências</Link></li>
+                        <li id='historico'><IterationCw className='menu-icon' /><Link to='/dashboard/historico'>Histórico de scans</Link></li>
                     </ul>
                 </div>
                 <div className='divider'></div>
                 <div id='second-section' className='menu-links'>
                     <p className='menu-titles'>AUTOMAÇÃO</p>
                     <ul>
-                        <li id='github-action'><GitFork className='menu-icon' />Github Action</li>
-                        <li id='alertas-cve'><ChartPie className='menu-icon' />Alertas de CVE</li>
+                        <li id='github-action'><GitFork className='menu-icon' /><Link to='/dashboard/github-action'>Github Action</Link></li>
+                        <li id='alertas-cve'><ChartPie className='menu-icon' /><Link to='/dashboard/alertas-cve'>Alertas de CVE</Link></li>
                     </ul>
                 </div>
                 <div className="divider"></div>
                 <div id='third-section' className='menu-links'>
                     <p className='menu-titles'>ORGANIZAÇÃO</p>
                     <ul>
-                        <li id='todos-projetos'><Rows4 className='menu-icon' />Todos os projetos</li>
-                        <li id='time'><UserGroup className='menu-icon' />Time</li>
+                        <li id='todos-projetos'><Rows4 className='menu-icon' /><Link to='/dashboard/projetos'>Todos os projetos</Link></li>
+                        <li id='time'><UserGroup className='menu-icon' /><Link to='/dashboard/time'>Time</Link></li>
                     </ul>
                 </div>
                 <div className="divider"></div>
                 <div id='fourth-section' className='menu-links'>
                     <ul>
-                        <li id='documentacao'><Mail className='menu-icon' />Documentação</li>
-                        <li id='configuracao'><Settings className='menu-icon' />Configuração</li>
+                        <li id='documentacao'><Mail className='menu-icon' /><Link to='/docs'>Documentação</Link></li>
+                        <li id='configuracao'><Settings className='menu-icon' /><Link to='/dashboard/configuracao'>Configuração</Link></li>
                         <li id='perfil'>Perfil</li>
                     </ul>
                 </div>

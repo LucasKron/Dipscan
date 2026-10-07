@@ -1,13 +1,13 @@
-import './vulnerabilidades.css'
+import './historico.css'
 import Menu from '../../../components/Menu/menu'
 
-export default function Vulnerabilidades(){
+export default function Historico(){
   return(
-    <div className='pg-vulnerabilidades'>
+    <div className='pg-historico'>
       <Menu/>
       <div className="main">
-        <header id='vulnerabilidades-top'>
-          <h1>Vulnerabilidades</h1>
+        <header id='historico-top'>
+          <h1>Histórico de scans</h1>
           <p></p>
         </header>
         <main className='conteudo'>

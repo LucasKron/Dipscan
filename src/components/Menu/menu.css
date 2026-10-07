@@ -50,6 +50,9 @@
     color: #5c6066;
     cursor: pointer;
 }
+.menu-links ul li a{
+    flex: 1;
+}
 .divider{
     margin: 14px 18px;
     border-top: 1px solid #c6c5c0;
