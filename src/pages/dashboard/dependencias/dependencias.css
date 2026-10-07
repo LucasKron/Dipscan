@@ -1,17 +1,17 @@
-.pg-vulnerabilidades{
+.pg-dependencias{
     display: flex;
     align-items: flex-start;
     min-height: 100vh;
     background-color: #e2e1d8;
 }
-.pg-vulnerabilidades #vulnerabilidades{
+.pg-dependencias #dependencias{
     background-color: #e2e0d8;
 }
-.pg-vulnerabilidades .main{
+.pg-dependencias .main{
     flex: 1;
     min-width: 0;
 }
-#vulnerabilidades-top{
+#dependencias-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,27 +21,37 @@
     background: #fff;
     flex-wrap: wrap;
 }
-#vulnerabilidades-top h1{
+#dependencias-top h1{
     font-size: 17px;
     font-weight: 500;
     letter-spacing: -.3px;
     margin: 0;
 }
-#vulnerabilidades-top p{
+#dependencias-top p{
     font-size: 12px;
     color: #9a9ca1;
 }
-.pg-vulnerabilidades .conteudo{
+.pg-dependencias .conteudo{
     padding: 22px 28px;
 }
-.pg-vulnerabilidades .card{
+.pg-dependencias .linha-kpi{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 14px;
+}
+.pg-dependencias .card{
     background: #fff;
     border: 1px solid #edebe4;
     border-radius: 14px;
     padding: 22px;
     min-height: 160px;
 }
-.pg-vulnerabilidades .card h2{
+.pg-dependencias .card-kpi{
+    padding: 18px;
+    min-height: 88px;
+}
+.pg-dependencias .card h2{
     font-size: 15px;
     font-weight: 500;
 }
