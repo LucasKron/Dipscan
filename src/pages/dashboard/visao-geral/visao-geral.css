@@ -1,29 +1,50 @@
-.pg-visao-geral{
-    display: flex;
-    align-items: flex-start;
-    min-height: 100vh;
-    background-color: #e2e1d8;
+.pg-visao-geral .indicador{
+    padding: 18px;
 }
-.pg-visao-geral #visao-geral{
-    background-color: #e2e0d8;
+.pg-visao-geral .indicador-rotulo{
+    font-size: 12px;
+    letter-spacing: .3px;
+    color: #9a9ca1;
 }
-#visao-top{
+
+.pg-visao-geral .grafico-legenda{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 16px;
-    padding: 18px 28px;
-    border-bottom: 1px solid #edebe4;
-    background: #fff;
-    flex-wrap: wrap; 
+    margin: 6px 0 12px;
+    font-size: 11px;
+    color: #5c6066;
 }
-#visao-top h1{
-    font-size: 17px;
+.pg-visao-geral .bolinha{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+.pg-visao-geral .bolinha-vermelha{ background: #dc4b4b; }
+.pg-visao-geral .bolinha-laranja{ background: #e09a2b; }
+.pg-visao-geral .bolinha-cinza{ background: #b9bcc1; }
+.pg-visao-geral .bolinha-clara{ background: #e4e1d9; }
+
+.pg-visao-geral .grafico{
+    height: 182px;
+}
+
+.pg-visao-geral .card-escuro{
+    padding: 22px;
+    background: #14161a;
+    border-radius: 14px;
+    color: #fff;
+}
+.pg-visao-geral .card-escuro h2{
+    font-size: 15px;
     font-weight: 500;
-    letter-spacing: -.3px;
-    margin: 0;
 }
-.main{
-    flex: 1;
-    min-width: 0;
+.pg-visao-geral .etiqueta-ativa{
+    padding: 6px 14px;
+    border: 1px solid #2c3038;
+    border-radius: 999px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: #8fe3c2;
 }
