@@ -1,0 +1,97 @@
+#entrar{
+    min-height: 100vh;
+    background-color: rgba(251,250,247,.88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 18px;
+    max-width: 400px;
+    box-shadow: 0 10px 40px rgba(20,22,26,.06);
+}
+
+.entrartitulo{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.entrarsubtitulo{
+    font-size: 14px;
+    color: #5c6066;
+    margin-bottom: 28px;
+}
+
+#entrar .e-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+    border: 1px solid #E4E1D9;
+    background: #fff;
+    border-radius: 10px;
+    color: #14161A;
+    cursor: pointer;
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+.divisor-linha {
+    flex: 1;
+    height: 1px;
+    background: #edebe4;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    color: #5c6066;
+    margin-bottom: 7px;
+}   
+
+.ou{
+    color: #5c6066;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    border: 1px solid #E4E1D9;
+    border-radius: 10px;
+    padding: 11px 13px;
+    font-size: 14px;
+    font-family: inherit;
+    background: #fff;
+    margin-bottom: 16px;
+}
+
+.btn-dark{
+    background: #14161a;
+    color: #fff;
+    border-color: #14161a;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.naotemconta{
+    font-size: 13px;
+    color:#9a9ca1;
+    text-align:center;
+    margin-top:20px;
+}
+
+.criaruma{
+    color: #0b7a55;
+}
